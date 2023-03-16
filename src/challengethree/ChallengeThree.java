@@ -13,20 +13,26 @@ import java.util.Arrays;
  */
 public class ChallengeThree {
 
-  
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int[] nums = {5, 1, 3, 7, 7, 9};
+        int[] nums = {5, 7, 1, 1, 2, 3, 22};
+        //int[] nums = {1, 1, 1, 1, 1};
+        //int[] nums = {1, 5, 1, 1, 1, 10, 15, 20, 100};
+
         changeNotAvailable(nums);
         System.out.println("Resultado--> " + changeNotAvailable(nums));
     }
 
     /**
-     * La función changeNotAvailable toma un arreglo de enteros coins como entrada y devuelve un entero que representa la cantidad mínima de cambio que no se puede crear utilizando las monedas dadas.
+     * La función changeNotAvailable toma un arreglo de enteros coins como
+     * entrada y devuelve un entero que representa la cantidad mínima de cambio
+     * que no se puede crear utilizando las monedas dadas.
+     *
      * @param coins lista de numeros enteros que representan las monedas
-     * @return la cantidad mínima de cambio que no se puede crear utilizando las monedas dadas
+     * @return la cantidad mínima de cambio que no se puede crear utilizando las
+     * monedas dadas
      */
     public static int changeNotAvailable(int[] coins) {
         Arrays.sort(coins);//Ordena el arreglo coins en orden ascendente
@@ -41,4 +47,3 @@ public class ChallengeThree {
     }
 
 }
-
